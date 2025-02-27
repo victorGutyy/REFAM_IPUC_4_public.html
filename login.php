@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="login-container">
-    <img src="/assets/images/logo.png" alt="Logo REFAM" class="logo">
+    <img src="assets/images/logo.png" alt="Logo REFAM" class="logo">
         <h1>REFAM 2025 - IPUC 4TA CALARCÁ</h1>
         <h3>Marcos 16:15</h3>
         <p>vayan por todo el mundo y prediquen el evangelio a toda criatura.</p>
