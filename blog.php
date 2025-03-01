@@ -25,7 +25,7 @@
                         <a href="#">Nuestra Iglesia ▼</a>
                         <ul class="dropdown-menu">
                         <li><a href="quienes_somos.php">Quiénes somos</a></li>
-                            <li><a href="#">Reseña histórica</a></li>
+                            <li><a href="reseña_historica.php">Reseña histórica</a></li>
                             <li><a href="#">En qué creemos</a></li>
                         </ul>
                     </li>

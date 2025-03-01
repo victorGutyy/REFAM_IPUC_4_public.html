@@ -22,14 +22,22 @@
                 Por cuanto se hace necesaria la <strong>permanente comunión</strong> entre los miembros de la iglesia; impartir <strong>consejos</strong> y ser instruidos en la <strong>Palabra de Dios</strong> 
                 para la obra del ministerio, y para el ejercicio de los <strong>oficios espirituales</strong> provistos en la Santa Biblia.
             </p>
-            <blockquote>
+            <p>
+                por cuanto esta comunion <strong>establecida por la voluntad de Dios</strong> es sostenida por el espiritu santo, y El es quien pone
+                 en su iglesia: <strong>apóstoles, profetas, evangelistas, pastores y maestros</strong>. (Ef. 2:20; 1 Co. 3:11)
+            </p>
+
+                <blockquote>
                 "Pedro les dijo: Arrepentíos, y bautícese cada uno de vosotros en el nombre de Jesucristo para perdón de los pecados; y recibiréis el don del Espíritu Santo."
                 <br><em>(Hechos 2:38)</em>
             </blockquote>
             <p>
                 Porque <strong>para vosotros es la promesa</strong>, y para <strong>vuestros hijos</strong>, y para <strong>todos los que están lejos</strong>, 
-                para cuantos el Señor nuestro Dios llamare. (Hechos 2:38-39).
+                para cuantos el Señor nuestro Dios llamare. (Hechos 2:38-39). 
             </p>
+            <p><strong>Declaramos esforzarnos</strong> para guardar la <strong>unidad del Espíritu en el vínculo de la paz</strong>, profesando nuestra adoración a un Señor, 
+                una fe y un bautismo, poniendo en práctica: <strong>Una fe y un bautismo</strong>, ya que tenemos un solo Dios y Padre de todos.
+</p>
             <blockquote>
                 "Solícitos en guardar la unidad del Espíritu en el vínculo de la paz; un cuerpo, y un Espíritu, como fuisteis también llamados en una misma esperanza de vuestra vocación;
                 un Señor, una fe, un bautismo, un Dios y Padre de todos, el cual es sobre todos y por todos y en todos." <br><em>(Ef. 4:3-6)</em>
