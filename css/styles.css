@@ -306,6 +306,194 @@ main {
     }
 }
 
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e3fdfd, #ffe6fa); /* Suave combinación pastel */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+/* Estilos específicos para Blog IPUC */
+.blog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.blog-hero {
+    background: url('assets/images/banner.jpg') no-repeat center center/cover;
+    color: rgb(71, 13, 170);
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-card a:hover {
+    background: #4a69bb;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    top: 40px;
+    left: 0;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-menu a {
+    color: #2c3e50;
+    display: block;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu.active {
+    display: block;
+}
+
+/* Ajustes para el menú */
+.menu li {
+    position: relative;
+}
+
+.menu .dropdown a {
+    cursor: pointer;
+}
+
+/* Estilos para la sección hero */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: #2c3e50; /* Color oscuro para mejor contraste */
+}
+
+/* Estilos para el título */
+.hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a1a1a; /* Color más oscuro para destacar */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Pequeña sombra para mejorar la legibilidad */
+}
+
+/* Estilos para el párrafo */
+.hero p {
+    font-size: 18px;
+    color: #34495e; /* Color más fuerte pero en armonía con el fondo */
+}
+/* Contenedor de "Quiénes somos" */
+.quienes-somos {
+    max-width: 900px;
+    margin: 80px auto; /* Centrado */
+    text-align: justify;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Título */
+.quienes-somos h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Estilos de los párrafos */
+.quienes-somos p {
+    font-size: 18px;
+    color: #34495e;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Citas bíblicas */
+.quienes-somos blockquote {
+    font-style: italic;
+    color: #4a69bb;
+    background: rgba(74, 105, 187, 0.1);
+    padding: 15px;
+    border-left: 5px solid #4a69bb;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
 
 
 

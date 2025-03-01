@@ -19,7 +19,7 @@
                 <ul class="menu" id="menu">
                      <li><a href="login.php" class="btn-login">INICIAR SESIÓN</a></li>
                      <li><a href="https://www.bibliaparalela.com" target="_blank">BIBLIA</a></li>
-                    <li><a href="#">BLOG IPUC</a></li>
+                    <li><a href="blog.php">BLOG IPUC</a></li>
                     <li><a href="#">MATERIAL REFAM</a></li>
                     
                 </ul>
