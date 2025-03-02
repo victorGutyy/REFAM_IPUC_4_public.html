@@ -1,5 +1,3 @@
-<?php include 'header.php'; ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,6 +17,9 @@
 
             <!-- Menú de navegación -->
             <nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <img src="assets/images/menu.svg" alt="Menú">
+            </div>
                 <ul class="menu">
                     <li><a href="index.php">Inicio</a></li>
                     <li class="dropdown">
@@ -59,11 +60,18 @@
     </main>
 
     <script>
-        // Script para activar el menú desplegable
+    document.addEventListener("DOMContentLoaded", function () {
+        // Activa el menú hamburguesa en móviles
+        document.querySelector(".hamburger-menu").addEventListener("click", function () {
+            document.getElementById("menu").classList.toggle("active");
+        });
+
+        // Activa el menú desplegable en "Nuestra Iglesia"
         document.querySelector('.dropdown a').addEventListener('click', function (e) {
             e.preventDefault();
             document.querySelector('.dropdown-menu').classList.toggle('active');
         });
-    </script>
+    });
+</script>
 </body>
 </html>

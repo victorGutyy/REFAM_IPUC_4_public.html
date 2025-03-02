@@ -16,7 +16,7 @@
             </a>
         </div>
         <nav>
-            <ul class="menu">
+            <ul class="menu" id="menu">
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="blog.php">Blog IPUC</a></li>
                 <li><a href="quienes_somos.php">Quiénes Somos</a></li>

@@ -8,8 +8,32 @@
 </head>
 <body>
 
-    <!-- Incluir el menú de navegación -->
-    <?php include 'header.php'; ?>
+    <!-- Encabezado y Menú de Navegación -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Logo REFAM">
+            </div>
+
+            <nav>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <img src="assets/images/menu.svg" alt="Menú">
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.php">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Nuestra Iglesia ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quienes_somos.php">Quiénes somos</a></li>
+                            <li><a href="reseña_historica.php">Reseña histórica</a></li>
+                            <li><a href="#">En qué creemos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
         <section class="quienes-somos">
@@ -44,6 +68,23 @@
             </blockquote>
         </section>
     </main>
+
+    <script>
+    function toggleMenu() {
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let dropdown = document.querySelector(".dropdown a");
+        if (dropdown) {
+            dropdown.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(".dropdown-menu").classList.toggle("active");
+            });
+        }
+    });
+    </script>
 
 </body>
 </html>

@@ -7,9 +7,31 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Incluir el menú de navegación -->
-    <?php include 'header.php'; ?>
+    <header>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="assets/images/logo.png" alt="Logo REFAM">
+            </div>
 
+            <nav>
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <img src="assets/images/menu.svg" alt="Menú">
+                </div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.php">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#">Nuestra Iglesia ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="quienes_somos.php">Quiénes somos</a></li>
+                            <li><a href="reseña_historica.php">Reseña histórica</a></li>
+                            <li><a href="#">En qué creemos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.php">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="historia">
             <h2>RESEÑA HISTÓRICA</h2>
@@ -81,11 +103,28 @@
                 Hoy en día, en el territorio colombiano existe un gran número de organizaciones catalogadas como pentecostales del nombre 
                 de Jesucristo.
             </p>
-            <h4>📖 Referencias:</h4>
+            <h4>Referencias</h4>
             <p>
                 Hernández, David. Forero, Eduardo.; Una Historia que no Termina; Editorial Buena Semilla, Medellín Colombia, 2005.
             </p>
         </section>
     </main>
+
+    <script>
+    function toggleMenu() {
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let dropdown = document.querySelector(".dropdown a");
+        if (dropdown) {
+            dropdown.addEventListener("click", function (e) {
+                e.preventDefault();
+                document.querySelector(".dropdown-menu").classList.toggle("active");
+            });
+        }
+    });
+    </script>
 </body>
 </html>
