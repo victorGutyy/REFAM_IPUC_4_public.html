@@ -433,7 +433,7 @@ p {
 /* Estilos para la sección hero */
 .hero {
     text-align: center;
-    padding: 50px 20px;
+    padding: 120px 20px 20px; /* Se aumenta el padding superior para separar del menú */
     color: #2c3e50; /* Color oscuro para mejor contraste */
 }
 
@@ -443,6 +443,7 @@ p {
     font-weight: bold;
     color: #1a1a1a; /* Color más oscuro para destacar */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Pequeña sombra para mejorar la legibilidad */
+    margin-bottom: 10px;
 }
 
 /* Estilos para el párrafo */
@@ -568,7 +569,42 @@ p {
         font-size: 16px;
     }
 }
+/* Estilo para la imagen debajo del título */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.image-container img {
+    width: 100%;
+    max-width: 350px; /* Ajuste para que no sea muy grande */
+    border-radius: 20px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajuste responsivo */
+@media (max-width: 600px) {
+    .image-container img {
+        max-width: 250px;
+    }
+}
+
+/* Estilo para resaltar el mensaje */
+.mensaje-destacado {
+    font-size: 40px; /* Aumenta el tamaño */
+    font-weight: bold;
+    color: #ff5722; /* Color llamativo (naranja fuerte) */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+    font-family: 'Georgia', serif; /* Letra elegante */
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
 
 
 

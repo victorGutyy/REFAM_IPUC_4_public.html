@@ -41,7 +41,13 @@
 
         <section class="hero">
             <h1>BIENVENIDOS A NUESTRO BLOG REFAM IPUC SEDE 4TA CALARCÁ</h1>
-            <p>Información relevante para nuestra congregación.</p>
+            <p class="mensaje-destacado">JESUCRISTO te ama y te quiere salvar.</p>
+
+            <!-- Contenedor de la imagen -->
+            <div class="image-container">
+                <img src="assets/images/imagen_ipuc_cuarta.jpg" alt="IPUC Cuarta Calarcá">
+            </div>
+
         </section>
 
         <section class="articles">
