@@ -496,7 +496,7 @@ p {
     max-width: 900px;
     margin: 80px auto; /* Centrar la sección */
     text-align: justify;
-    padding: 40px;
+    padding: 120px 40px 40px; /* Aumenta el padding superior para separar del menú */
     background: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -553,7 +553,7 @@ p {
 /* Responsivo para dispositivos móviles */
 @media (max-width: 768px) {
     .historia {
-        padding: 20px;
+        padding: 150px 20px 20px; /* Ajuste de padding */
         margin: 50px auto;
     }
     .historia h2 {
