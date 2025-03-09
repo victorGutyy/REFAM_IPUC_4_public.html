@@ -26,7 +26,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="quienes_somos.php">Quiénes somos</a></li>
                             <li><a href="reseña_historica.php">Reseña histórica</a></li>
-                            <li><a href="#">En qué creemos</a></li>
+                            <li><a href="en_que_creemos.php">En qué creemos</a></li>
                         </ul>
                     </li>
                     <li><a href="contacto.php">Contacto</a></li>

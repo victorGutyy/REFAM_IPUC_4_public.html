@@ -606,6 +606,47 @@ p {
     letter-spacing: 1px;
 }
 
+.btn-pdf-float {
+    position: fixed; /* Se mantiene siempre visible */
+    bottom: 20px; /* Espaciado desde la parte inferior */
+    right: 20px; /* Espaciado desde la derecha */
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Efecto al pasar el mouse (solo en pantallas grandes) */
+@media (min-width: 768px) {
+    .btn-pdf-float:hover {
+        background-color: #34495e;
+        transform: scale(1.1); /* Efecto de zoom */
+    }
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 480px) {
+    .btn-pdf-float {
+        width: 80px; /* Hace el botón más pequeño */
+        height: 80px;
+        padding: 10px;
+        font-size: 14px;
+        bottom: 15px; /* Reduce la distancia inferior */
+        right: 15px; /* Reduce la distancia derecha */
+        border-radius: 50%; /* Lo convierte en un botón circular */
+    }
+}
+
 
 
 
