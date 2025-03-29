@@ -52,9 +52,9 @@
 
         <section class="articles">
             <article>
-                <h2>Título del artículo</h2>
-                <p>Resumen del artículo con información relevante...</p>
-                <a href="#">Leer más</a>
+                <h2> Conoces a JESUCRISTO?</h2>
+                <p>Te invito a conocerlo como dice la escritura</p>
+                <a href="https://www.youtube.com/watch?v=5bZLETzdEAU">Escucha el video</a>
             </article>
 
             <article>

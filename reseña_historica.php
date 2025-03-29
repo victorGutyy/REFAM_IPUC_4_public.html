@@ -32,6 +32,11 @@
             </nav>
         </div>
     </header>
+
+    <a href="https://www.youtube.com/watch?v=Oh0hKSzIF9s" target="_blank" class="btn-pdf-float">
+            Para más información
+            </a>
+
     <main>
         <section class="historia">
             <h2>RESEÑA HISTÓRICA</h2>
