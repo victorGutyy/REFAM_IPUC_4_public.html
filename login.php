@@ -39,22 +39,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - REFAM 2025</title>
+    <title>Iniciar Sesión - REFAM 2026</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="has-fixed-header">
+
+<?php require_once __DIR__ . "/header.php"; ?>
+
     <div class="login-container">
-    <img src="assets/images/logo.png" alt="Logo REFAM" class="logo">
-        <h1>REFAM 2025 - IPUC 4TA CALARCÁ</h1>
+    
+        <h1>REFAM 2026 - IPUC 4TA CALARCÁ</h1>
         <h3>Marcos 16:15</h3>
         <p>vayan por todo el mundo y prediquen el evangelio a toda criatura.</p>
 

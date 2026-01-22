@@ -12,15 +12,15 @@ if (!isset($_SESSION["usuario_nombre"])) {
 }
 
 // Intentar obtener los registros de la base de datos
-$sql = "SELECT * FROM membresia";
-$resultado = $conn->query($sql);
-
-// Verificar si la consulta SQL fue exitosa
-if (!$resultado) {
-    die("<p style='color:red;'>Error en la consulta SQL: " . $conn->error . "</p>");
+$sql = "SELECT * FROM membresia ORDER BY id DESC";
+try {
+    $stmt = $pdo->query($sql);
+    $registros = $stmt->fetchAll(); // array de filas
+    $numRegistros = count($registros);
+} catch (PDOException $e) {
+    die("<p style='color:red;'>Error en la consulta SQL: " . $e->getMessage() . "</p>");
 }
 
-$numRegistros = $resultado->num_rows;
 ?>
 
 <!DOCTYPE html>
@@ -100,7 +100,7 @@ $numRegistros = $resultado->num_rows;
             </tr>
 
             <?php if ($numRegistros > 0) { ?>
-                <?php while ($row = $resultado->fetch_assoc()) { ?>
+            <?php foreach ($registros as $row) { ?>
                     <tr id="fila_<?php echo $row["id"]; ?>">
                         <td><?php echo $row["id"]; ?></td>
                         <td><?php echo $row["nombre_completo"]; ?></td>
@@ -111,7 +111,7 @@ $numRegistros = $resultado->num_rows;
                         <td><?php echo $row["tiempo_bautizado"]; ?></td>
                         <td><?php echo ($row["promesado"] == 1) ? "Sí" : "No"; ?></td>
                         <td><?php echo $row["experiencia_refam"]; ?></td>
-                        <td><?php echo $row["lugar_de_refam"]; ?></td>
+                        <td><?php echo $row["lugar_refam"]; ?></td>
                         <td><?php echo $row["nivel_clase"]; ?></td>
                         <td>
                             <button class="boton-accion boton-editar" onclick='cargarRegistro(<?php echo json_encode($row); ?>)'>Editar</button>
@@ -138,7 +138,7 @@ $numRegistros = $resultado->num_rows;
         document.getElementById("tiempo_bautizado").value = datos.tiempo_bautizado;
         document.getElementById("promesado").value = datos.promesado;
         document.getElementById("experiencia_refam").value = datos.experiencia_refam;
-        document.getElementById("lugar_de_refam").value = datos.lugar_refam;
+        document.getElementById("lugar_refam").value = datos.lugar_refam;
         document.getElementById("nivel_clase").value = datos.nivel_clase;
 
         document.getElementById("boton_formulario").innerText = "Actualizar";

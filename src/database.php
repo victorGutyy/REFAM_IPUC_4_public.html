@@ -1,14 +1,10 @@
 <?php
-$host = "srv1852.hstgr.io";
-$dbname = "u127360908_refam4calarca";
-$username = "u127360908_refam4ipuc";
-$password = "Refam2025@";
+// src/database.php
+// Este archivo existe para que el resto del proyecto pueda incluirlo.
+// En local/producción la conexión real está centralizada en config/config.php (PDO).
 
-// Crear conexión con MySQL
-$conn = new mysqli($host, $username, $password, $dbname);
+require_once __DIR__ . '/../config/config.php';
 
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
-?>
+// Compatibilidad por si algún archivo antiguo usa $conn (mysqli).
+// OJO: lo ideal es migrar todo a $pdo, pero esto evita errores inmediatos.
+$conn = null;
